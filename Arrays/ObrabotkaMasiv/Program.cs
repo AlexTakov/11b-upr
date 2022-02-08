@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 
+
 namespace ObrabotkaMasiv
 {
     class Program
