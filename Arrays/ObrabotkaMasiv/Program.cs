@@ -8,27 +8,37 @@ namespace ObrabotkaMasiv
         static void Main(string[] args)
         {
             string[] input = Console.ReadLine().Split().ToArray();
-            int n = int.Parse(Console.ReadLine());
-            for (int i = 0; i < n; i++)
+            while (true)
             {
                 string[] cmd = Console.ReadLine().Split().ToArray();
                 string command = cmd[0];
-                if(command=="Reverse")
+                if (command == "End")
                 {
-                    input = input.Reverse().ToArray();
+                    break;
                 }
-                else if (command=="Distinct")
+                switch (command)
                 {
-                    input = input.Distinct().ToArray();
-                }
-                else if(command=="Replace")
-                {
-                    int index = int.Parse(cmd[1]);
-                    string strForReplace = cmd[2];
-                    input[index] = strForReplace;
+                    case "Reverse": input = input.Reverse().ToArray(); break;
+                    case "Distinct": input = input.Distinct().ToArray(); break;
+                    case "Replace":
+                        int index = int.Parse(cmd[1]);
+                        string newString = cmd[2];
+                        if (index >= 0 && index < input.Length)
+                        {
+                            input[index] = newString;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Invalid input");
+                        }
+                        break;
+                    default:
+                        Console.WriteLine("Invalid command");
+                        break;
                 }
             }
-            Console.WriteLine(string.Join(", ",input));
+            Console.WriteLine(string.Join(", ", input));
         }
     }
 }
+       
