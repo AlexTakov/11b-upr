@@ -14,6 +14,7 @@ namespace RemoveFirst
             {
                 nums.Remove(first);
             }
+            //nums.RemoveAll(x => x == first);
             Console.WriteLine(string.Join(" ", nums));
         }
     }
