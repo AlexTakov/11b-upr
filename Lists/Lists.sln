@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoveFirst", "RemoveFirst\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListManipulation", "ListManipulation\ListManipulation.csproj", "{28ABB866-20E7-495A-A626-BBB72D32A2F3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeistviqMasivi", "DeistviqMasivi\DeistviqMasivi.csproj", "{B6F50387-01C3-4D95-B389-3B2314A871B9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{28ABB866-20E7-495A-A626-BBB72D32A2F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28ABB866-20E7-495A-A626-BBB72D32A2F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28ABB866-20E7-495A-A626-BBB72D32A2F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6F50387-01C3-4D95-B389-3B2314A871B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6F50387-01C3-4D95-B389-3B2314A871B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6F50387-01C3-4D95-B389-3B2314A871B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6F50387-01C3-4D95-B389-3B2314A871B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
